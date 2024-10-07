@@ -1,0 +1,21 @@
+def print_params(a = 1, b = 'строка', c = True):
+    print(a, b, c)
+
+print_params()
+print_params(a = True, c = 'boolSheet')
+print_params(b = 25)
+print_params(c = [1,2,3])
+print() # отделим отступом
+
+values_list = [1, '2', False]
+values_dict = {
+    'a' : 'Adam',
+    'b' : 'Smith',
+    'c' : 777
+}
+print_params(*values_list)
+print_params(**values_dict)
+
+
+values_list_2 = [777, 'WIN']
+print_params(*values_list_2, 42)
