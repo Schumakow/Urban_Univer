@@ -7,7 +7,7 @@ class House:
         '''new_floor - номер этажа(int), на который нужно приехать'''
         for i in range(1, new_floor):
             print(i)
-        if self.number_of_floors < new_floor or self.number_of_floors < 1:
+        if self.number_of_floors < new_floor or new_floor < 1:
             print('Такого этажа не существует')
     def __len__(self):
         return self.number_of_floors
